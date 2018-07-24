@@ -1,17 +1,16 @@
 /* UNIVERSAL STYLES */
   html {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
 
   *, *:before, *:after {
-    /* box-sizing: inherit; */
+    box-sizing: inherit;
   }
 
   body {
     font-family: Helvetica, sans-serif;
     width: 95%;
   }
-
 
 /* HEADER */
 
@@ -27,42 +26,51 @@
 
 /* PRODUCTS */
   .products {
-    width: 75%;
+    width: 85%;
     margin: 5% auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
       border: 1px solid blue;
   }
 
   figure {
-    width: 50%;
+    /* width: 50%; */
     max-width: 225px;
     min-width: 225px;
     height: 240px;
-    margin: 1em;
+    margin: 1%;
     border: 3px solid Black;
     display: flex;
     flex-flow: column;
   }
 
-  .image_wrapper {
-    width: 90%;
-    height: auto;
-    margin: auto;
-    overflow:hidden;
-      border: 1px solid purple;
+/* this increases the size of the product */
+/* boxes for desktop-size or above */
+  @media screen and (min-width: 900px){
+    figure {
+      max-width: 275px;
+      min-width: 275px;
+      height: 300px;
+    }
+  }
 
+  .image_wrapper {
+    width: 95%;
+    height: 70%;
+    margin: auto;
+    /* overflow:hidden; */
+    display: flex;
+      border: 1px solid purple;
   }
 
   figure img {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: block;
-      overflow: hidden;
     margin: auto;
       border: 1px solid red;
+      padding: 10%;
   }
 
   figcaption {
@@ -70,7 +78,7 @@
     color: White;
     height: 3em;
     display: flex;
-    margin-top: auto;
+    /* margin: auto; */
     align-items: center;
     justify-content: center;
       border: 1px solid red;
@@ -78,20 +86,49 @@
 
   figcaption h4 {
       border: 1px solid red;
-
   }
 
-
-
 /* DETAILS */
+  .details {
+  width: 85%;
+  margin: 5% auto;
+  display: flex;
+    border: 1px solid blue;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  }
 
+  .details wrapper {
+  width: 225px;
+    border: 1px solid purple;
+    margin: 0 auto;
+  }
+
+  .detail {
+  min-width: 220px;
+    border: 1px solid red;
+    margin: 1%;
+  }
+
+  .detail .title {
+  display: flex;
+  width: 70%;
+  color: White;
+  background-color: Black;
+  height: 3em;
+  align-items: center;
+  }
+
+  .detail h3, p {
+  margin-left: 5%
+  }
 
 
 /* FOOTER */
 
 
 
-/* MEDIA QUERIES */
+/* GENERAL MEDIA QUERIES */
 
 @media screen and (max-width: 736px){
   body {
