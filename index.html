@@ -2,9 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Secret Agent Supply Inc.</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./css/reset.css" type="text/css"> -->
+    <link rel="stylesheet" href="./css/normalise.css" type="text/css">
+    <link rel="stylesheet" href="./jQuery/flow_type.js">
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script> -->
   </head>
 
   <body>
@@ -14,7 +21,7 @@
       <h2>SECRET AGENT SUPPLY INC.</h2>
     </header>
 
-<!--TITLE-->
+<!--HERO IMAGE-->
     <section class="hero_image">
       <title>
         <h2>NEW ARRIVAL</h2>
@@ -24,66 +31,78 @@
 
 <!--NAVIGATION BAR-->
     <nav>
-      <wrapper>
+      <div>
         <a href="#">Eyewear</a>
         <a href="#">Apparel</a>
         <a href="#">Gadgets</a>
         <a href="#">Vehicles</a>
         <a href="#">Classes</a>
         <a href="#">Contact</a>
-      </wrapper>
+      <div>
     </nav>
 
 <!--PRODUCTS-->
     <section class="products">
       <figure>
-        <img src="./resources/images/pen.png" alt="image of pen">
-        <figcaption>Exploding Pen</figcaption>
+        <div class="image_wrapper">
+          <img src="./resources/images/pen.png" alt="image of pen">
+        </div>
+        <figcaption>
+          <h4>Exploding Pen</h4>
+        </figcaption>
       </figure>
 
       <figure>
-        <img src="./resources/images/watch.png" alt="image of watch">
-        <figcaption>Cellular Watch</figcaption>
+        <div class="image_wrapper">
+          <img src="./resources/images/watch.png" alt="image of watch">
+        </div>
+        <figcaption>
+          <h4>Cellular Watch</h4>
+        </figcaption>
       </figure>
 
       <figure>
-        <img src="./resources/images/glasses.png" alt="image of sunglasses">
-        <figcaption>Thermal Glasses</figcaption>
+        <div class="image_wrapper">
+          <img src="./resources/images/glasses.png" alt="image of sunglasses">
+        </div>
+        <figcaption>
+          <h4>Thermal Glasses</h4>
+        </figcaption>
       </figure>
     </section>
 
 <!--DETAILS-->
     <section class="details">
 
-    <wrapper>
-    <div class="detail">
-      <div class="title">
-        <h3>Location</h3>
-      </div>
+    <div class="wrapper"> <!-- this just helps position the table -->
+      <table class="detail">
+        <tr class="title">
+          <th>Location</th>
+        </tr>
 
-      <div>
-        <p>-47.346436, 84.32354<p>
-      </div>
+        <tr class="info">
+          <td>-47.346436, 84.32354<td>
+        </tr>
+      </table>
     </div>
-    </wrapper>
 
-    <wrapper>
-    <div class="detail">
-      <div class="title">
-        <h3>Hours</h3>
-      </div>
+    <div class="wrapper">
+      <table class="detail">
+        <tr class="title">
+          <th>Hours</th>
+        </tr>
 
-      <div>
-        <p>0800-1800</p>
-      </div>
+        <tr>
+          <td>0800-1800</td>
+        </tr>
+      </table>
     </div>
-    </wrapper>
 
     </section>
 
 <!--FOOTER-->
     <footer>
-      <small>&copy Secret Agent Supply Inc.</small>
+      <small>&copy; Secret Agent Supply Inc.</small>
     </footer>
 
   </body>

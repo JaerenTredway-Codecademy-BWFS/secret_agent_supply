@@ -98,7 +98,7 @@
   justify-content: space-between;
   }
 
-  .details wrapper {
+  .details .wrapper {
   width: 225px;
     border: 1px solid purple;
     margin: 0 auto;
@@ -118,11 +118,6 @@
   height: 3em;
   align-items: center;
   }
-
-  .detail h3, p {
-  margin-left: 5%
-  }
-
 
 /* FOOTER */
 
