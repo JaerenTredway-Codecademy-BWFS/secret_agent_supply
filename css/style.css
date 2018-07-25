@@ -77,24 +77,20 @@
 }
 
 /* Basic Styles */
-body {
-	background-color: #ece8e5;
-	margin: 45px 0 0 0 !important;
-}
 nav {
 	height: 40px;
 	width: 100%;
-	background: #455868;
+	background: Red;
 	font-size: 11pt;
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	position: relative;
-	border-bottom: 2px solid #283744;
+	border-bottom: 2px solid Grey;
 }
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 600px;
+	width: 900px;
 	height: 40px;
 }
 nav li {
@@ -104,7 +100,7 @@ nav li {
 nav a {
 	color: #fff;
 	display: inline-block;
-	width: 100px;
+	width: 150px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 40px;
@@ -120,7 +116,7 @@ nav li:last-child a {
 	border-right: 0;
 }
 nav a:hover, nav a:active {
-	background-color: #8c99a4;
+	background-color: #B71C1C;
 }
 nav a#pull {
 	display: none;
@@ -227,7 +223,7 @@ nav a#pull {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 736px){
+@media screen and (max-width: 600px){
   body {
     font-size: 12px;
   }
@@ -241,8 +237,8 @@ nav a#pull {
     }
   }
 
-  /*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
+  /* NAV styles for screen 900px and lower: */
+@media screen and (max-width: 900px) {
 	nav {
   		height: auto;
   	}
@@ -267,8 +263,8 @@ nav a#pull {
   	}
 }
 
-/*Styles for screen 515px and lower*/
-@media only screen and (max-width : 480px) {
+/* NAV styles for hamburger menu: */
+@media only screen and (max-width : 900px) {
 	nav {
 		border-bottom: 0;
 	}
@@ -278,7 +274,7 @@ nav a#pull {
 	}
 	nav a#pull {
 		display: block;
-		background-color: #283744;
+		background-color: Red;
 		width: 100%;
 		position: relative;
 	}
@@ -302,6 +298,6 @@ nav a#pull {
 		width: 100%;
 	}
 	nav li a {
-		border-bottom: 1px solid #576979;
+		border-bottom: 1px solid Grey;
 	}
 }
