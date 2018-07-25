@@ -154,7 +154,17 @@
   }
 
 /* FOOTER */
+  footer {
+    background-color: Black;
+    color: White;
+    height: 7rem;
+    line-height: 7rem;
+  }
 
+  small {
+    margin-top: 50%;
+    margin-left: 5rem;
+  }
 
 
 /* MEDIA QUERIES */
