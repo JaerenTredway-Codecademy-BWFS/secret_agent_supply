@@ -9,15 +9,52 @@
 
   body {
     font-family: Helvetica, sans-serif;
-    width: 95%;
+
+  }
+
+  main {
+
   }
 
 /* HEADER */
+  header {
+    background-color: Black;
+    position: fixed;
+    width: 98%;
+    height: 5rem;
+    color: White;
+    display: flex;
+    align-items: center;
+  }
 
-
+  header div {
+    margin-left: 7%;
+    margin-right: 3%;
+  }
 
 /* HERO IMAGE */
+  .hero_image {
+    background: url("../resources/images/moto.jpeg")
+       bottom center no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 35rem;
+    /* display: block; */
+    border: 1px solid red;
 
+  }
+
+  .hero_image div {
+    background-color: Black;
+    width: 40%;
+    height: 8rem;
+    display: block;
+    padding: 2rem;
+    margin-left: 5rem;
+    margin-top: 9rem;
+    color: White;
+    border: 1px solid blue;
+  }
 
 
 /* NAVIGATION BAR */
@@ -43,16 +80,6 @@
     border: 3px solid Black;
     display: flex;
     flex-flow: column;
-  }
-
-/* this increases the size of the product */
-/* boxes for desktop-size or above */
-  @media screen and (min-width: 900px){
-    figure {
-      max-width: 275px;
-      min-width: 275px;
-      height: 300px;
-    }
   }
 
   .image_wrapper {
@@ -123,10 +150,17 @@
 
 
 
-/* GENERAL MEDIA QUERIES */
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 736px){
   body {
     font-size: 12px;
   }
 }
+
+@media screen and (min-width: 900px){
+    figure {
+      max-width: 275px;
+      min-width: 275px;
+      height: 300px;
+    }
+  }
