@@ -25,6 +25,7 @@
     color: White;
     display: flex;
     align-items: center;
+    z-index: 2;
   }
 
   .logo {
@@ -79,7 +80,7 @@
 /* Basic Styles */
 nav {
 	height: 40px;
-	width: 100%;
+	width: 98%;
 	background: Red;
 	font-size: 11pt;
 	font-family: Helvetica, sans-serif;
@@ -138,7 +139,7 @@ nav a#pull {
     max-width: 225px;
     min-width: 225px;
     height: 240px;
-    margin: 1%;
+    margin: 1rem;
     border: 3px solid Black;
     display: flex;
     flex-flow: column;
@@ -190,7 +191,7 @@ nav a#pull {
   .details .wrapper {
   width: 225px;
     border: 1px solid purple;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   .detail {
@@ -264,7 +265,7 @@ nav a#pull {
 }
 
 /* NAV styles for hamburger menu: */
-@media only screen and (max-width : 900px) {
+@media /*only*/ screen and (max-width : 900px) {
 	nav {
 		border-bottom: 0;
 	}
