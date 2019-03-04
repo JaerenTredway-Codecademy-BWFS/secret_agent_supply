@@ -54,12 +54,10 @@
     margin-left: 0.5rem;
     margin-bottom: auto;
     color: White;
-    border: 1px solid red;
   }
 
   .title_box h1 {
     display: block;
-    border: 1px solid blue;
   }
 
 
@@ -131,7 +129,6 @@ nav a#pull {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-      border: 1px solid blue;
   }
 
   figure {
@@ -151,7 +148,6 @@ nav a#pull {
     margin: auto;
     /* overflow:hidden; */
     display: flex;
-      border: 1px solid purple;
   }
 
   figure img {
@@ -159,7 +155,6 @@ nav a#pull {
     height: auto;
     display: block;
     margin: auto;
-      border: 1px solid red;
       padding: 10%;
   }
 
@@ -171,11 +166,10 @@ nav a#pull {
     /* margin: auto; */
     align-items: center;
     justify-content: center;
-      border: 1px solid red;
   }
 
   figcaption h4 {
-      border: 1px solid red;
+     
   }
 
 /* DETAILS */
@@ -183,20 +177,17 @@ nav a#pull {
   width: 85%;
   margin: 5% auto;
   display: flex;
-    border: 1px solid blue;
   flex-flow: row wrap;
   justify-content: space-between;
   }
 
   .details .wrapper {
   width: 225px;
-    border: 1px solid purple;
     margin: 1rem auto;
   }
 
   .detail {
   min-width: 220px;
-    border: 1px solid red;
     margin: 1%;
   }
 
